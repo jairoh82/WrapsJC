@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WrapsJC - Account</title>
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/m2i8A0H7K9N4b1A0.png" height="50" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active"><a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="producs.html">Products</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacts.html">Contact</a></li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="createAccount.html">Create Account/Sign in</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-center">Account</h1>
+                    <div class="text-center">
+                        <h2>Login</h2>
+                        <form id="loginForm" onsubmit="return validateLoginForm()">
+                            <div class="form-group">
+                                <label for="loginEmail">Email:</label>
+                                <input type="email" class="form-control" id="loginEmail" name="loginEmail" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="loginPassword">Password:</label>
+                                <input type="password" class="form-control" id="loginPassword" name="loginPassword" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Login</button>
+                        </form>
+                        <p>Don't have an account? <a href="createAccount.html">Create Account</a></p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <footer>
+                <div class="row">
+                    <div class="col-xl-3">
+                        <img src="img/m2i8A0H7K9N4b1A0.png" height="50" alt="">
+                    </div>
+                    <div class="col-xl-6">Copyright © 2024 All rights reserved</div>
+                </div>
+                <br>
+                <br>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.4.1.js"></script>
+</body>
+</html>
